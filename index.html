@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link efeito nome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- link googles fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="inicio.css" />
+    <link rel="stylesheet" href="responsivo.css">
+    <title>portfólio | Felix</title>
+  </head>
+  <body>
+    <!-- efeito matrix -->
+    <canvas id="matrix"></canvas>
+
+    <div class="cabecalho">
+        <h1>VINICIUS <span>| DEV</span></h1>
+    </div>
+
+    
+    <div class="lista-navegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="Habilidades.html">Habilidades</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+
+
+<!-- menu mobile -->
+
+<div class="btn-abrir-menu" id="btn-menu">
+  <i class="bi bi-list-nested"></i>
+</div>
+
+    <div class="menu-mobile" id="menu-mobile">
+      <div class="bnt-fechar">
+        <i class="bi bi-box-arrow-right"></i>
+      </div>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="Habilidades.html">Habilidades</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </div>
+
+<!-- div nome efeito -->
+    <div class="container">
+      <div class="glitch" data-text="vinicius">Vinicius Felix</div>
+      <div class="text-home">
+        <span>Desenvolvedor <span class="destaque texto-animado"></span></span>
+      </div>
+    </div>
+    <div class="scanlines"></div>
+
+    <!-- redes sociais -->
+    <div class="redes-sociais">
+        <ul>
+            <li><a href="https://www.instagram.com/viniciusfelixyt?igsh=dDE2aGNpNGJudmJ0" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://github.com/FELIIX-007" target="_blank"><i class="bi bi-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/vinicius-felix-9216b4336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+    </div>
+
+    <script src="menu.js" defer></script>
+    <script src="textoAnimado.js"></script>
+    <script src="efeitoMatrix.js"></script>
+  </body>
+</html>
