@@ -120,15 +120,11 @@ color: #bfab93;
 
     .habilidades{
         animation: anima 8s linear  alternate infinite;
-        overflow: hidden;
+        
     }
 
     .habilidades:hover{
         animation-play-state: paused;
-    }
-
-    .card{
-        overflow: hidden;
     }
 
     @keyframes anima {
