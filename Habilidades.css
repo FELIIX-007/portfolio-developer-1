@@ -1,5 +1,6 @@
 body{
     background-color:#191013;
+    overflow: hidden;
 }
 
 .cabecalho h1 span{
