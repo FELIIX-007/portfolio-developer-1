@@ -1,6 +1,5 @@
 body{
     background-color:#191013;
-    overflow: hidden;
 }
 
 .cabecalho h1 span{
@@ -115,6 +114,7 @@ color: #bfab93;
     .habilidades{
         animation: anima 8s linear  alternate infinite;
         height: 50%;
+        overflow: hidden;
     }
 
     .habilidades:hover{
