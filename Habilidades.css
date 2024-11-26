@@ -94,7 +94,8 @@ color: #bfab93;
     
     .btn-abrir-menu i{
         color: #fffedfd3;
-        position: fixed;
+        position: absolute;
+        width: grid;
     }
 
     .btn-abrir-menu i:hover{
@@ -120,10 +121,15 @@ color: #bfab93;
     .habilidades{
         animation: anima 8s linear  alternate infinite;
         height: 50%;
+        overflow: hidden;
     }
 
     .habilidades:hover{
         animation-play-state: paused;
+    }
+
+    .card{
+        overflow: hidden;
     }
 
     @keyframes anima {
