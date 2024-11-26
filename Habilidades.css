@@ -3,7 +3,11 @@ body{
 }
 
 .cabecalho h1 span{
-    
+    color: #fffedfd3;
+}
+
+.cabecalho i{
+    padding: 200px;
 }
 
 .lista-navegacao a{
@@ -120,15 +124,6 @@ color: #bfab93;
 
     .habilidades:hover{
         animation-play-state: paused;
-    }
-
-    @keyframes anima {
-        0%{
-            transform: translateX(0px);
-        }
-        100%{
-            transform: translateX(-45%);
-        }
     }
 
     footer{
