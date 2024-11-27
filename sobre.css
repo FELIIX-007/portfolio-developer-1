@@ -1,7 +1,7 @@
 body{
     background-color: #0b1f33;
-    font-family: "Poppins", sans-serif;
-    padding: 1.8rem;
+    font-family: "Lacquer", system-ui;
+    padding: 1.2rem;
     overflow: hidden;
 }
 .cabecalho h1 span{
@@ -71,6 +71,7 @@ body{
  color: rgb(255, 255, 255);
  font-size: 20px;
  text-decoration: none;
+ font-family: "Lacquer", system-ui;
 }
 
 footer{
