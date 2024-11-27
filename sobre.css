@@ -73,6 +73,10 @@ body{
  text-decoration: none;
 }
 
+footer{
+    display: none;
+}
+
 /* resposivo */
 
 @media (max-width: 1000px) {
@@ -112,6 +116,10 @@ body{
 
     .btn-abrir-menu i:hover{
         color: #0080ff;
+    }
+
+    .contato{
+        display: none;
     }
 
     footer{

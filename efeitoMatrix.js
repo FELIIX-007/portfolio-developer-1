@@ -8,13 +8,12 @@ const ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-// letras do Matrix Rain
-// ver mais em: https://bit.ly/3yFJoU3
+// letras do Matrix utilizado
 const letters = ["日","ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
 
 const fontSize = 18;
 
-// definindo quantas colunas serão necessárias pelo tamanho da tela e fonte
+// colunas serão necessárias pelo tamanho da tela e fonte
 const columns = c.width / fontSize;
 
 // criando um array para cada gota, sempre iniciando na posição do y=1
