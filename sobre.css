@@ -96,6 +96,9 @@ footer{
     .imagem-comeco{
         display: none;
     }
+    footer{
+        display: block;
+    }
     .apresetacao h1{
     font-size: 16px;
     text-align:center;
