@@ -79,6 +79,11 @@ body{
 
     .apresetacao{
         flex-direction: column;
+        width: 100%;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
     }
 
     .apresetacao img{
@@ -88,15 +93,16 @@ body{
         display: none;
     }
     .apresetacao h1{
-    font-size: 18px;
+    font-size: 13px;
     text-align:center;
-
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .cabecalho h1{
         font-size: 1.9rem;
         width: grid;
-        
     }
 
     .btn-abrir-menu i{
@@ -110,7 +116,6 @@ body{
 
     .contato{
         bottom: 0;
-        padding: 50px;
     }
 
     .bnt-fechar i{
