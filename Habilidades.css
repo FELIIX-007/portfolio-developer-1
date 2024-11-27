@@ -120,15 +120,9 @@ color: #bfab93;
 
     .habilidades{
         animation: anima 8s linear  alternate infinite;
-        overflow-x: hidden;
-        overflow: hidden;
+        height: 50%;
+        width: 100%;
     }
-
-    .card{
-        overflow-x: hidden;
-        overflow: hidden;
-    }
-
     .habilidades:hover{
         animation-play-state: paused;
     }
