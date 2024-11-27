@@ -1,6 +1,7 @@
 body{
     background-color:#191013;
     overflow: hidden;
+    padding: 1rem;
 }
 
 .cabecalho h1 span{
@@ -86,7 +87,7 @@ footer span{
 color: #bfab93;
 }
 
-.carrossel{
+.box-habilidades{
     display: none;
 }
 
@@ -94,8 +95,12 @@ color: #bfab93;
 
 @media (max-width: 1000px){
 
-    .carrossel{
+    .box-habilidades{
         display: block;
+    }
+
+    .habilidades{
+        display: none;
     }
     
     .btn-abrir-menu i{
@@ -124,44 +129,62 @@ color: #bfab93;
         color: #fffedfd3;
     }
 
-    .habilidades{
-        animation: anima 8s linear  alternate infinite;
-        height: 50%;
+    .box-habilidades{
         width: 100%;
-        display: none;
+        height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       gap: 35px;
+       padding: 1rem;
     }
 
-    .carrossel{
+    .box-habilidades .cads{
         width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    .pagina-slide{
-        display: inline-block;
-        animation: anima 8s linear infinite;
-        overflow-x: hidden;
+    .box-habilidades .cards i{
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
     }
 
-    .pagina-slide:hover{
-        animation-play-state: paused;
+    .box-habilidades .cards h2{
+        color: #000000;
     }
 
-    .pagina-slide img{
-        width: 300px;
-        height: 300px;
-        border-radius: 20px;
+    .habilidades-mobile .cards{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        border-radius: 15px;
+        background-color: #bfab93;
     }
 
-    @keyframes anima {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(-50%);
-        }
+    .segunda-fila .cards{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        border-radius: 15px;
+        background-color: #bfab93;
     }
+
+    
 
     footer{
         position: absolute;
