@@ -4,7 +4,7 @@ body{
 }
 
 .cabecalho h1 span{
-    color: #fffedfd3;
+    color: #bfab93;
 }
 
 .cabecalho i{
@@ -12,11 +12,11 @@ body{
 }
 
 .lista-navegacao a{
-    color: #fffedfd3;
+    color: #bfab93;
 }
 
 .lista-navegacao a:hover{
-    color: #bfab93;
+    color: #fffedfd3;
 }
 
 .habilidades{
@@ -88,34 +88,42 @@ footer span{
 color: #bfab93;
 }
 
+.carrossel{
+    display: none;
+}
+
 /* responsivo */
 
 @media (max-width: 1000px){
+
+    .carrossel{
+        display: block;
+    }
     
     .btn-abrir-menu i{
-        color: #fffedfd3;
+        color: #bfab93;
         position: absolute;
         width: grid;
     }
 
     .btn-abrir-menu i:hover{
-        color: #bfab93;
+        color: #fffedfd3;
     }
 
     .menu-mobile a{
-        color: #fffedfd3;
+        color: #bfab93;
     }
 
     .menu-mobile a:hover{
-        color: #bfab93;
-    }
-
-    .bnt-fechar i{
         color: #fffedfd3;
     }
 
-    .bnt-fechar i:hover{
+    .bnt-fechar i{
         color: #bfab93;
+    }
+
+    .bnt-fechar i:hover{
+        color: #fffedfd3;
     }
 
     .habilidades{
@@ -124,16 +132,35 @@ color: #bfab93;
         width: 100%;
         display: none;
     }
-    .habilidades:hover{
+
+    .carrossel{
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        
+    }
+
+    .pagina-slide{
+        display: inline-block;
+        animation: anima 8s linear infinite;
+    }
+
+    .pagina-slide:hover{
         animation-play-state: paused;
+    }
+
+    .pagina-slide img{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
     }
 
     @keyframes anima {
         0%{
-            transform: translateX(600px);
+            transform: translateX(0);
         }
         100%{
-            transform: translateX(-45%);
+            transform: translateX(-50%);
         }
     }
 
