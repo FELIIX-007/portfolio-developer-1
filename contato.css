@@ -23,92 +23,52 @@ color: #58057e;
     color: #7e0ea2;
 }
 
-section .formulario{
-    padding: 80px 4%;
-    height: 90vh;
-    }
-    
-    .formulario h1{
-        color:#7e0ea2 ;
-        text-align: center;
-        font-size: 45px;
-    }
-    
-    form{
-        max-width: 5000px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 40px;
-    }
-    
-    form input, form textarea{
-        width: 100%;
-        background-color: #3b3939ad;
-        border: 0;
-        outline: 0;
-        padding: 20px 330px;
-        border-radius: 20px;
-        color: #fff;
-        font-size: 18px;
-    }
-    
-    form textarea{
-        resize: none;
-        height: 200px;
-    
-    }
-    
-    form .btn-enviar{
-        margin-top: 20px;
-        text-align: center;
-    }
-    
-    form .btn-enviar input{
-        width: 120px;
-        background-color: #5c1275;
-        color: #ffffff;
-        cursor: pointer;
-        border-radius: 20px;
-        font-weight: 600;
-    }
-    
-    form .btn-enviar input:hover{
-        box-shadow: 1px 1px 5px 4px #8107a9;
-    }
 
+.form-container {
+    background:rgba(255, 255, 255, 0.082) ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 20px;
+    color: aliceblue;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    outline: 0;
+}
+
+.btn-enviar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #58057ec5;
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-enviar input:hover {
+    background-color: #7e0ea2;
+}
+
+.texto h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 2.5rem;
+    color: #7e0ea2;
+}
 
     @media (max-width: 1000px) {
             
-            form{
-                max-width: 5000px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 4px;
-            }
-            
-            form input, form textarea{
-                width: 100%;
-                background-color: #3b3939ad;
-                border: 0;
-                outline: 0;
-                padding: 20px 130px;
-                border-radius: 20px;
-                color: #fff;
-                font-size: 18px;
-            }
-            
-            form textarea{
-                resize: none;
-                height: 150px;
-            
-            }
             
             footer h1{
                 bottom: 0;
@@ -149,16 +109,9 @@ section .formulario{
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
+            .form-container {
+                max-width: 350px;
+                height: 400px;
+            }
 
     }
