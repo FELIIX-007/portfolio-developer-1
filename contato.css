@@ -32,8 +32,7 @@ color: #58057e;
     max-width: 500px;
     height: 400px;
 }
-.form-container input,
-.form-container textarea {
+.form-container input {
     width: 100%;
     background-color: transparent;
     margin-bottom: 15px;
@@ -46,7 +45,21 @@ color: #58057e;
     outline: 0;
 }
 
-.btn-enviar input {
+.form-container textarea{
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 55px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgb(119, 116, 116);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    outline: 0;
+}
+
+.form-container button {
     width: 100%;
     padding: 10px;
     border: none;

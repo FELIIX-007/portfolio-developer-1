@@ -65,14 +65,14 @@
           <h2>Contato</h2>
           <div class="form-container">
             
-            <form id="emailForm">
-                <input type="text" id="userName" placeholder="Seu Nome:" required>
-                <input type="email" id="userEmail" placeholder="Seu E-mail:" required>
-                <textarea id="userMessage" rows="5" placeholder="Sua Mensagem:" required></textarea>
-                <div class="btn-enviar">
-                    <input type="submit" value="ENVIAR">
-                </div>
-            </form>
+            <form method="POST" action="https://formsubmit.co/contatofelix07@gmail.com" enctype="multipart/form-data">
+              <input type="text" name="text" placeholder="seu nome">
+              <input type="email" name="email" placeholder="Seu e-mail">
+              <input type="hidden" name="_next" value="https://felix-com-br.netlify.app/contato">
+              <input type="hidden" name="_captcha" value="false">
+              <textarea name="message" placeholder="Sua menssagem"></textarea>
+              <button type="submit">Enviar</button>
+          </form>
         </div>
       </div>
         </section>
