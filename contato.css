@@ -63,14 +63,14 @@ color: #58057e;
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #58057ec5;
+    background-color: #58057ee4;
     color: #FFF;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
 }
-.btn-enviar input:hover {
-    background-color: #58057ee4;
+.form-container button:hover {
+    background-color: #7308a5e4;
 }
 
 .texto h2{

@@ -64,13 +64,10 @@
           <div class="texto">
           <h2>Contato</h2>
           <div class="form-container">
-            
-            <form method="POST" action="https://formsubmit.co/contatofelix07@gmail.com" enctype="multipart/form-data">
-              <input type="text" name="text" placeholder="seu nome">
-              <input type="email" name="email" placeholder="Seu e-mail">
-              <input type="hidden" name="_next" value="https://felix-com-br.netlify.app/contato">
-              <input type="hidden" name="_captcha" value="false">
-              <textarea name="message" placeholder="Sua menssagem"></textarea>
+            <form id="contact-form">
+              <input type="text" name="text" placeholder="seu nome" required>
+              <input type="email" name="email" placeholder="Seu e-mail" required>
+              <textarea name="p" placeholder="Sua menssagem"></textarea required>
               <button type="submit">Enviar</button>
           </form>
         </div>
@@ -85,6 +82,7 @@
     </footer>
     
     <script src="menu.js" defer></script>
+    <script src="app.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="enviarEmail.js"></script>
     <script src="textoAnimado.js"></script>
