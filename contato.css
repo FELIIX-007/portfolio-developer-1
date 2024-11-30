@@ -80,12 +80,12 @@ color: #58057e;
     color: #7e0ea2;
 }
 
-    @media (max-width: 1000px) {
-            
-            
+    @media (max-width: 1000px) {   
+
             footer h1{
                 bottom: 0;
                 position: absolute;
+                z-index: -9999;
                 right: 0;
                 left: 0;
                 padding: 9px;
