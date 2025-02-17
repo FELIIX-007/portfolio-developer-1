@@ -181,6 +181,9 @@ body {
     margin-top: -130px;
   }
 
+  .info_experriencia p{
+    text-align: center;
+  }
 
   .conteiner_skill {
     display: flex;
