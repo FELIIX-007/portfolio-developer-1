@@ -259,6 +259,9 @@ footer {
     color: #c004ff;
   }
 
+  .main_contato{
+    margin-top: -80px;
+  }
   
   .conteiner_cont {
     flex-direction: column;
