@@ -1,7 +1,12 @@
 body {
   background-color: #000000;
   overflow: hidden;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
@@ -29,7 +34,9 @@ body {
 }
 
 .main_skills {
-  width: 100%;
+  width: 95%;
+  height: 100vh;
+  text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -75,6 +82,7 @@ body {
 .softSkills {
   display: flex;
   gap: 50px;
+  
 }
 
 .softSkills ul {
@@ -196,6 +204,7 @@ body {
     width: 100%;
     text-align: left;
     gap: 5px;
+  justify-content: center;
   }
 
   .softSkills ul {
