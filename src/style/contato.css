@@ -1,0 +1,394 @@
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --lilaz: #8006b9;
+  --black: #050505;
+  --white: #fafafa;
+}
+
+.cabecalho h1 {
+  color: white;
+}
+
+.cabecalho h1 span {
+  color: var(--lilaz);
+}
+
+.lista-navegacao a {
+  color: #58057ec5;
+}
+
+.lista-navegacao a:hover {
+  color: #7e0ea2;
+}
+
+.main_contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner_cont {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.Infor_contato h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  animation: AparecerDireita 0.3s ease-in-out;
+}
+
+.Infor_contato p {
+  font-size: 1.5rem;
+  text-align: left;
+  opacity: 0.7;
+  animation: AparecerDireita 0.3s ease-in-out;
+}
+
+.texts_contato {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  animation: AparecerEsqueda 0.3s ease-in-out;
+}
+
+.texts_contato h3 {
+  opacity: 0.8;
+  color: #c004ff;
+  font-weight: 300;
+}
+
+.content_cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.contate-me {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: AparecerEsqueda 0.3s ease-in-out;
+}
+
+.Redes_contato {
+  display: flex;
+  gap: 50px;
+  animation: subir 0.3s ease-in-out;
+}
+
+.Redes_contato span {
+  font-size: 1.8rem;
+  color: var(--lilaz);
+}
+
+.Redes_contato ul {
+  display: flex;
+  font-size: 1.7rem;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.Redes_contato ul li:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Redes_contato a {
+  color: #848f87;
+}
+
+.Redes_contato .bi-instagram:hover {
+  color: red;
+}
+.Redes_contato .bi-github:hover {
+  color: rgb(255, 255, 255);
+}
+.Redes_contato .bi-linkedin:hover {
+  color: rgb(0, 81, 255);
+}
+
+.form-container {
+  background: rgb(42, 41, 41);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+}
+.form-container input {
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid rgb(119, 116, 116);
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  outline: 0;
+  animation: AparecerEsqueda 0.3s ease-in-out;
+}
+
+.form-container textarea {
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+  padding: 55px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgb(119, 116, 116);
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  outline: 0;
+  animation: AparecerDireita 0.3s ease-in-out;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #58057ee4;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: subir 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+  background-color: #7308a5e4;
+}
+
+.texto h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 2.5rem;
+  color: #7e0ea2;
+}
+
+.footer span {
+  color: var(--lilaz);
+  font-weight: bolder;
+}
+.footer h4 {
+  font-size: 17px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 10px;
+}
+
+@keyframes AparecerEsqueda {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes AparecerDireita {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .btn-abrir-menu i {
+    color: var(--lilaz);
+  }
+  .btn-abrir-menu i:hover {
+    color: #c004ff;
+  }
+  .btn-abrir-menu i {
+    color: #58057e;
+  }
+
+  .menu-mobile a {
+    color: #58057e;
+  }
+
+  .menu-mobile i {
+    color: #58057e;
+  }
+  .menu-mobile a:hover {
+    color: #c004ff;
+  }
+
+  .menu-mobile i:hover {
+    color: #c004ff;
+  }
+
+  
+  .conteiner_cont {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Redes_contato {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Redes_contato span {
+    font-size: 1.3rem;
+  }
+
+  .Redes_contato ul {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 10px;
+    list-style-type: none;
+  }
+
+  .Infor_contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Infor_contato h2 {
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--lilaz);
+  }
+
+  .Infor_contato p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .content_cont {
+    width: 90%;
+    text-align: center;
+  }
+
+  .contate-me {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  .texts_contato {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .texto h2 {
+    display: none;
+  }
+
+  .form-container {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+  }
+  .form-container input {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid rgb(119, 116, 116);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    outline: 0;
+  }
+
+  .form-container textarea {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgb(119, 116, 116);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    outline: 0;
+  }
+
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #58057ee4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .form-container button:hover {
+    background-color: #7308a5e4;
+  }
+
+  footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 10px;
+  }
+
+  .footer span {
+    color: var(--lilaz);
+    font-weight: bolder;
+  }
+  .footer h4 {
+    font-size: 14px;
+  }
+}
