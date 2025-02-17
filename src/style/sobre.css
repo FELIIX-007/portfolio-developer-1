@@ -9,6 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 1.2rem;
   width: 100%;
+  overflow: hidden;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -248,6 +249,7 @@ to {
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    margin-top: -80px;
   }
   
   .text {
